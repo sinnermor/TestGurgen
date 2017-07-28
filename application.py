@@ -28,11 +28,29 @@ def run_popen(name, cout_pfases, from_count, to_count):
               # + ' ' + str(cout_pfases) + ' ' + str(from_count) + ' ' + str(to_count)
     process = subprocess.Popen([command , str(cout_pfases),str(from_count),str(to_count)], stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
     returncode = process.wait()
-    print('Code is {0}'.format(returncode))
+    # print('Code is {0}'.format(returncode))
     return str(process.stdout.read(), 'utf-8')
+    # return process
 
 def decode_responce(responce):
     pass
 
-responce = run_popen('gurgen_0', 10 , 1, 4)
-print(responce)
+def check_sum(array, fin_sum):
+    sum = 0
+    for el in array:
+        if el == 5:
+            sum = sum + 5
+        elif el == 1:
+            sum = sum + 10
+    assert sum == fin_sum, 'Sums are different' + sum + ' != ' + fin_sum
+
+def parse_response(response_string):
+    index = response_string.find('Dieses')
+    mass = response_string[index+7 :]
+    print('MASSS' + mass)
+    part = response_string.rpartition('Result')
+    print('MUUUU')
+
+
+te = run_popen('gurgen_0', 10, 1, 4)
+parse_response(te)
