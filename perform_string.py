@@ -1,5 +1,5 @@
 
-def check_sum():
+def check_sum(min, max):
     list = []
     with open('log.txt', 'r') as f:
         log_list = f.readlines()
@@ -12,10 +12,12 @@ def check_sum():
                 assert sum_read == count_sum(list),"GHHHHH" + str(list)
                 list.clear()
                 continue
-            new_str = el[7:-1]
-            for num in new_str:
-                if num != ' ':
-                    list.append(int(num))
+            else:
+                new_str = el[7:-1]
+                for num in new_str:
+                    if num != ' ':
+                        list.append(int(num))
+                assert min <= len(list) <= max, "Count dieses is wrong when list is " + str(el)
     print('No errors were found')
 
 
@@ -31,4 +33,4 @@ def count_sum(rec_list):
     return sum
 
 
-parse_string()
+check_sum(1,4)
