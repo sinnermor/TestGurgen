@@ -11,8 +11,8 @@ Dices: 2 6 5
 Result: 5
 Dices: 6 
 Result: 0
-Dices: 1 1 
-Result: 20
+Dices: 1 2 3 4
+Result: 10
 Dices: 6 
 Result: 0
 Dices: 2 4 3 1 
@@ -21,52 +21,3 @@ Dices: 5 6
 Result: 5
 Dices: 3 1 
 Result: 10
-Number of turns: 10
-Minimum number of dices: 1
-Maximum number of dices: 4
-Dices: 4 6 
-Result: 0
-Dices: 6 3 
-Result: 0
-Dices: 5 
-Result: 5
-Dices: 2 6 5 
-Result: 5
-Dices: 6 
-Result: 0
-Dices: 1 1 
-Result: 20
-Dices: 6 
-Result: 0
-Dices: 2 4 3 1 
-Result: 10
-Dices: 5 6 
-Result: 5
-Dices: 3 1 
-Result: 10
-
-Number of turns: 10
-Minimum number of dices: 1
-Maximum number of dices: 4
-Dices: 6 5 4 
-Result: 5
-Dices: 4 3 6 
-Result: 0
-Dices: 4 
-Result: 0
-Dices: 2 1 3 
-Result: 10
-Dices: 1 
-Result: 10
-Dices: 1 
-Result: 10
-Dices: 4 5 1 1 
-Result: 25
-Dices: 3 
-Result: 0
-Dices: 5 3 1 
-Result: 15
-Dices: 2 5 3 4 
-Result: 5
-
-
